@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-cream: #102C26;        /* Deep Forest Green Background */
+  --color-brand-gold: #F7E7CE;         /* Champagne Gold Accent */
+  --color-brand-gold-dark: #E5C294;    /* Muted Champagne Gold Hover */
+  --color-brand-dark: #F7E7CE;         /* Champagne Gold Text/Titles */
+  --color-brand-card: #163A32;         /* Slightly lighter Forest Green for cards */
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
+}
+
+:root {
+  --background: #102C26;
+  --foreground: #F7E7CE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #102C26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F7E7CE;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E5C294;
+}
+
+/* Glassmorphism utilities */
+.glass-nav {
+  background: rgba(16, 44, 38, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(247, 231, 206, 0.15);
+}
+
+.glass-card {
+  background: rgba(22, 58, 50, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(247, 231, 206, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #F7E7CE 0%, #E5C294 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
