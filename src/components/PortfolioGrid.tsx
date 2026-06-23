@@ -6,34 +6,33 @@ import Image, { StaticImageData } from "next/image";
 import { Folder, ArrowUpRight, Search } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
-// Import all 12 original images from src/assets
-import imgEducationTrust from "@/assets/IMG-20241016-WA0021.jpg";
-import imgBurgerFlyer from "@/assets/IMG-20241113-WA0002(1).jpg";
-import imgPhotoFrame from "@/assets/IMG-20241214-WA0011.jpg";
-import imgWeddingDecor from "@/assets/IMG-20250102-WA0015.jpg";
-import imgNailSpa from "@/assets/IMG-20250106-WA0000.jpg";
-import imgCalendarFrame from "@/assets/IMG-20250106-WA0002.jpg";
-import imgMegaSaleFrame from "@/assets/IMG-20250106-WA0004.jpg";
-import imgFoodMenu from "@/assets/IMG-20250213-WA0009.jpg";
-import imgBiryaniFlyer from "@/assets/IMG-20250213-WA0011.jpg";
-import imgMangoIceCream from "@/assets/IMG-20250218-WA0006.jpg";
-import imgSpecialWatch from "@/assets/IMG-20250224-WA0008.jpg";
-import imgKavintechSolutions from "@/assets/smo copy.jpg";
+// Import all original images from src/assets (converted to webp)
+import imgBurgerFlyer from "@/assets/IMG-20241113-WA0002(1).webp";
+import imgPhotoFrame from "@/assets/IMG-20241214-WA0011.webp";
+import imgWeddingDecor from "@/assets/IMG-20250102-WA0015.webp";
+import imgNailSpa from "@/assets/IMG-20250106-WA0000.webp";
+import imgCalendarFrame from "@/assets/IMG-20250106-WA0002.webp";
+import imgMegaSaleFrame from "@/assets/IMG-20250106-WA0004.webp";
+import imgFoodMenu from "@/assets/IMG-20250213-WA0009.webp";
+import imgBiryaniFlyer from "@/assets/IMG-20250213-WA0011.webp";
+import imgMangoIceCream from "@/assets/IMG-20250218-WA0006.webp";
+import imgSpecialWatch from "@/assets/IMG-20250224-WA0008.webp";
+import imgKavintechSolutions from "@/assets/smo.webp";
 
-// Import all 13 newly added images from src/assets
-import imgChickenCutlet from "@/assets/IMG-20260622-WA0025.jpg.jpeg";
-import imgMoruMoruChicken from "@/assets/IMG-20260622-WA0026.jpg.jpeg";
-import imgFriedChickenPromo from "@/assets/IMG-20260622-WA0028.jpg.jpeg";
-import imgChickenPopcorn from "@/assets/IMG-20260622-WA0029.jpg.jpeg";
-import imgLovelyChaatsMenu from "@/assets/IMG-20260622-WA0030.jpg.jpeg";
-import imgEmpireEBikesNoLicence from "@/assets/IMG-20260622-WA0031.jpg.jpeg";
-import imgSignatureWatchAd from "@/assets/IMG-20260622-WA0032.jpg.jpeg";
-import imgGreenAppleCampaign from "@/assets/IMG-20260622-WA0033.jpg.jpeg";
-import imgEngineersDayCampaign from "@/assets/IMG-20260622-WA0034.jpg.jpeg";
-import imgEmpireEBikesWings from "@/assets/IMG-20260622-WA0035.jpg.jpeg";
-import imgRamzanGreetings from "@/assets/IMG-20260622-WA0036.jpg.jpeg";
-import imgZaroidRecruitment from "@/assets/IMG-20260622-WA0037.jpg.jpeg";
-import imgOrderzPOSMockup from "@/assets/IMG-20260622-WA0038.jpg.jpeg";
+// Import all 13 newly added images from src/assets (converted to webp)
+import imgChickenCutlet from "@/assets/IMG-20260622-WA0025.jpg.webp";
+import imgMoruMoruChicken from "@/assets/IMG-20260622-WA0026.jpg.webp";
+import imgFriedChickenPromo from "@/assets/IMG-20260622-WA0028.jpg.webp";
+import imgChickenPopcorn from "@/assets/IMG-20260622-WA0029.jpg.webp";
+import imgLovelyChaatsMenu from "@/assets/IMG-20260622-WA0030.jpg.webp";
+import imgEmpireEBikesNoLicence from "@/assets/IMG-20260622-WA0031.jpg.webp";
+import imgSignatureWatchAd from "@/assets/IMG-20260622-WA0032.jpg.webp";
+import imgGreenAppleCampaign from "@/assets/IMG-20260622-WA0033.jpg.webp";
+import imgEngineersDayCampaign from "@/assets/IMG-20260622-WA0034.jpg.webp";
+import imgEmpireEBikesWings from "@/assets/IMG-20260622-WA0035.jpg.webp";
+import imgRamzanGreetings from "@/assets/IMG-20260622-WA0036.jpg.webp";
+import imgZaroidRecruitment from "@/assets/IMG-20260622-WA0037.jpg.webp";
+import imgOrderzPOSMockup from "@/assets/IMG-20260622-WA0038.jpg.webp";
 
 interface Project {
   id: string;
@@ -71,17 +70,7 @@ export default function PortfolioGrid() {
       year: "2025",
       image: imgKavintechSolutions,
     },
-    {
-      id: "edu-trust",
-      title: "Education Trust Campaign",
-      category: "Brand Identity",
-      client: "Dream Future Education Trust",
-      description: "Large format print banner featuring high contrast layout grids and trust themes.",
-      details: "Crafted a structured, dual-color academic campaign poster. Segmented sections of course details, address information, and action steps using clean grids. Strictly adhered to corporate blue and gold accents to convey trust, stability, and education excellence.",
-      tools: ["Adobe Photoshop", "Adobe InDesign"],
-      year: "2024",
-      image: imgEducationTrust,
-    },
+
     {
       id: "food-menu",
       title: "Restaurant Menu Design",
